@@ -1,6 +1,6 @@
 {
-  "name": "ic-vite-vue-typescript-starter",
-  "version": "0.0.0",
+  "name": "ic-app-vue-3-ts-template",
+  "version": "0.0.1",
   "scripts": {
     "start": "vite",
     "build": "vue-tsc --noEmit && vite build --mode staging",

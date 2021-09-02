@@ -7,6 +7,7 @@
 
 # How to use
 
+- first run npm install and then dfx deploy (to generate .did files)
 - src/... contains fe (vue 3) code
 - src_backend/... contains canister code
 - script "copy:types" copies all the generated .did files to "src/declarations/" that is why this directory is gitignored

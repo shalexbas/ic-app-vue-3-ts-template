@@ -59,9 +59,8 @@ export default defineComponent({
     const count = ref(0);
 
     const refreshCounter = async () => {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const res: any = await counter.getValue();
-      count.value = res.toString();
+      const res = await counter.getValue();
+      count.value = Number.parseInt(res.toString());
     };
 
     const increment = async () => {

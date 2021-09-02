@@ -5,15 +5,11 @@
       "type": "motoko"
     },
     "assets": {
-      "dependencies": [
-        "counter"
-      ],
+      "dependencies": ["counter"],
       "frontend": {
         "entrypoint": "dist/index.html"
       },
-      "source": [
-        "dist/"
-      ],
+      "source": ["dist/"],
       "type": "assets"
     }
   },

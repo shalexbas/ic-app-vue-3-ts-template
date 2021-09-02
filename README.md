@@ -1,10 +1,13 @@
 # Based on work in https://github.com/MioQuispe/create-ic-app
+
 # Difference to https://github.com/MioQuispe/create-ic-app
+
 - this template just support vue 3 with ts
 - this template provides support for dfx 0.8.0 and its code generation + ic-agent autocompletion
 - hot-reload dev-server provided
 
 # How to use
+
 - src/... contains fe (vue 3) code
 - src_backend/... contains canister code
 - script "copy:types" copies all the generated .did files to "src/declarations/" that is why this directory is gitignored

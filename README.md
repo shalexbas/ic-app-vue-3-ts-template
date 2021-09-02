@@ -1,10 +1,9 @@
-# Based on work in https://github.com/MioQuispe/create-ic-app
-
 # Difference to https://github.com/MioQuispe/create-ic-app
 
-- this template just support vue 3 with ts
+- this template just supports vue 3 with ts
 - this template provides support for dfx 0.8.0 and its code generation + ic-agent autocompletion
 - hot-reload dev-server provided
+- based on work in https://github.com/MioQuispe/create-ic-app
 
 # How to use
 
@@ -18,6 +17,8 @@
   - if you want build for production then you need to switch mode in build-script to production
 
 # Feedback is welcome!
+
+
 
 # Vue 3 + Typescript + Vite + ESLINT + PRETTIER + >=dfx 0.8.0
 

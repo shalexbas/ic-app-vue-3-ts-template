@@ -19,9 +19,9 @@
 
 # Feedback is welcome!
 
+# Other info
 
-
-# Vue 3 + Typescript + Vite + ESLINT + PRETTIER + >=dfx 0.8.0
+## Vue 3 + Typescript + Vite + ESLINT + PRETTIER + >=dfx 0.8.0
 
 This template should help get you started developing with Vue 3 and Typescript in Vite.
 

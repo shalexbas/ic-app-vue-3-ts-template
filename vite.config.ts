@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import path from "path";
+import { resolve } from "path";
 
 let localCanisters, prodCanisters, canisters;
 
@@ -33,6 +34,22 @@ initCanisterIds();
 
 //https://vitejs.dev/config/
 export default defineConfig({
+  css: {
+    preprocessorOptions: {
+      scss: {
+        // example : additionalData: `@import "./src/design/styles/variables";`
+        // dont need include file extend .scss
+        additionalData: `@import "./src/assets/scss/variable";
+                         @import "./src/assets/scss/global";`,
+      },
+    },
+  },
+  base: "./",
+  resolve: {
+    alias: {
+      "@": resolve(__dirname, "./src"),
+    },
+  },
   plugins: [vue()],
   define: {
     "process.env": process.env,

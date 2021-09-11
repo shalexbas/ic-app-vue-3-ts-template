@@ -45,7 +45,7 @@
 
 <script lang="ts">
 import { ref, onMounted, defineComponent } from "vue";
-import { counterAgent as counter } from "../agent_factory";
+import { counterAgent as counter } from "@/agent_factory";
 
 export default defineComponent({
   name: "HelloWorld",

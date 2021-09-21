@@ -11,12 +11,12 @@
     "lib": ["esnext", "dom"],
     "types": ["vite/client"],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/dapp/*"]
     },
     "baseUrl": ".",
     "skipLibCheck": true,
     "allowJs": true,
     "isolatedModules": true
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "include": ["src/dapp/**/*.ts", "src/dapp/**/*.d.ts", "src/dapp/**/*.tsx", "src/dapp/**/*.vue"]
 }

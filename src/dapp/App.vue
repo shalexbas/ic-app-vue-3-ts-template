@@ -1,5 +1,5 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.svg" />
+  <img alt="Vue logo" src="@/assets/logo.svg" />
   <HelloWorld msg="Hello Internet Computer + Vue 3 + TypeScript + Vite" />
   <router-link to="/">HomePage</router-link> |
   <router-link to="/about">AboutPage</router-link> |

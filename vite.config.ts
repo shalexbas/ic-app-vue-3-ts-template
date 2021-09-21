@@ -39,15 +39,15 @@ export default defineConfig({
       scss: {
         // example : additionalData: `@import "./src/design/styles/variables";`
         // dont need include file extend .scss
-        additionalData: `@import "./src/assets/scss/variable";
-                         @import "./src/assets/scss/global";`,
+        additionalData: `@import "./src/dapp/assets/scss/variable";
+                         @import "./src/dapp/assets/scss/global";`,
       },
     },
   },
   base: "./",
   resolve: {
     alias: {
-      "@": resolve(__dirname, "./src"),
+      "@": resolve(__dirname, "./src/dapp"),
     },
   },
   plugins: [vue()],

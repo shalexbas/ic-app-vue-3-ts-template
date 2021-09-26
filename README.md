@@ -1,3 +1,5 @@
+# Check also the `pinia_state_management_and_router` branch out for a different code structure
+
 # Difference to https://github.com/MioQuispe/create-ic-app
 
 - this template just supports vue 3 with ts + eslint + prettier

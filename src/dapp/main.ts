@@ -2,6 +2,7 @@ import { dummy } from "./before_all";
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
+import { createPinia } from "pinia";
 
 import "./assets/scss/global.css";
 
@@ -11,5 +12,6 @@ const dummy0 = dummy;
 
 const app = createApp(App);
 
+app.use(createPinia());
 app.use(router);
 app.mount("#app");

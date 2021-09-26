@@ -5,16 +5,32 @@
   <router-link to="/about">AboutPage</router-link> |
   <router-link to="/example">ExamplePage</router-link>
   <router-view />
+  <button @click="increase">InMyStore</button>
+  <div>MyStoreVal: {{ counter1234 }}, {{ doubleCount }}</div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, computed } from "vue";
 import HelloWorld from "@/components/HelloWorld.vue";
+import { useMyDemoStore } from "@/store/DemoStore";
 
 export default defineComponent({
-  name: "App",
   components: {
     HelloWorld,
+  },
+  setup() {
+    const myDemoStore = useMyDemoStore();
+    const counter1234 = computed(() => myDemoStore.counter1234);
+    const doubleCount = computed(() => myDemoStore.doubleCount);
+
+    //const increase = () => myDemoStore.increment();
+
+    return {
+      myDemoStore,
+      counter1234,
+      doubleCount,
+      increase: myDemoStore.increment,
+    };
   },
 });
 </script>
